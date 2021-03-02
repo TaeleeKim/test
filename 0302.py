@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[90]:
-
-
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
@@ -461,9 +458,6 @@ class GetResponse:
             writer.save() 
 
 
-# In[91]:
-
-
 if __name__ == '__main__':   
     
     json_file_name = 'C:/Users/ktl0602/Downloads/maximal-storm-303606-00a7c52333a6.json'
@@ -478,50 +472,7 @@ if __name__ == '__main__':
     
     conn = GetResponse(json_file_name, spreadsheet_url, db_Sheet, server_Sheet, company_list_path, target_path)
     conn.showStatus()
-    #conn.processAddedData()
     #conn.positiveResponse()
     #conn.processAddedData()
     #conn.processAllData(target_path)
-
-
-# In[92]:
-
-
-conn.positiveResponse("C:/Users/ktl0602/Documents/Python Scripts/문화분석리포트")
-
-
-# In[45]:
-
-
-conn.processAllData(target_path)
-
-
-# In[47]:
-
-
-conn.processAddedData()
-
-
-# In[7]:
-
-
-len(ShortAnswer.original_shortAnswer.index_list)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
